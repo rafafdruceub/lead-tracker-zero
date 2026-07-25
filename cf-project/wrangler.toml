@@ -1,0 +1,11 @@
+name = "registro-leads-sprint-zero"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "public"
+
+# Binding usado em desenvolvimento local (npx wrangler pages dev).
+# Em produção, o binding é configurado direto no painel da Cloudflare
+# (Pages > seu projeto > Settings > Functions > KV namespace bindings),
+# não por este arquivo — mas é bom manter os dois em sincronia.
+[[kv_namespaces]]
+binding = "LEADS_KV"
+id = "COLOQUE_AQUI_O_ID_DA_SUA_KV_NAMESPACE"
